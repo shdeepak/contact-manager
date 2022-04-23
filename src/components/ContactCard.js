@@ -16,6 +16,12 @@ export const ContactCard = ({ contact, getContactId }) => {
         className="trash alternate outline icon"
         style={{ color: "red", marginTop: "7px" }}
       ></i>
+      <Link to={{ pathname: `/edit`, state: { contact } }}>
+      <i
+        className="edit alternate outline icon"
+        style={{ color: "blue", marginTop: "7px", marginRight: "10px" }}
+      ></i>
+      </Link>
     </div>
   );
 };
